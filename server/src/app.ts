@@ -15,6 +15,7 @@ import { setupDailySync } from "./cron/dailySync.js";
 import * as Sentry from "@sentry/node";
 import { env } from "./env.js";
 import { logger } from "./utils/logger.js";
+import { syncOrders } from "./services/syncService.js";
 
 const app = express();
 
@@ -41,10 +42,16 @@ Sentry.setupExpressErrorHandler(app);
 
 app.use(middlewares.notFound);
 app.use(middlewares.errorHandler);
+
 mongoose
   .connect(env.MONGODB_URI)
   .then(async () => {
     logger.info("DB connected");
+    if (env.SYNC_ORDER_WHEN_BOOT) {
+      logger.info("Auto sync enabled on boot");
+      await syncOrders();
+    }
+
     setupDailySync();
   })
   .catch((err) => {

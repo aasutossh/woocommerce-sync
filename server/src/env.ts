@@ -11,6 +11,7 @@ const envSchema = z.object({
   WOOCOMMERCE_CONSUMER_KEY: z.string(),
   WOOCOMMERCE_CONSUMER_SECRET: z.string(),
   SENTRY_DSN: z.url().default(""),
+  SYNC_ORDER_WHEN_BOOT: z.coerce.boolean().default(false),
   ORDER_LOOKBACK_DAYS: z.coerce.number().default(30),
   ORDER_DELETION_THRESHOLD_DAYS: z.coerce.number().default(90),
 });
