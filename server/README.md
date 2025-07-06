@@ -167,6 +167,7 @@ Tracked errors include:
 | `WOOCOMMERCE_STORE_URL`         | ✅        | WooCommerce store base URL                |
 | `WOOCOMMERCE_CONSUMER_KEY`      | ✅        | WooCommerce REST API key                  |
 | `WOOCOMMERCE_CONSUMER_SECRET`   | ✅        | WooCommerce REST API secret               |
+| `SYNC_ORDER_WHEN_BOOT`          | ⚠️        | Sync orders when running (leave empty for false)|
 | `SENTRY_DSN`                    | ⚠️        | Optional, for error reporting             |
 | `ORDER_LOOKBACK_DAYS`           | ✅        | Lookback period (in days) to fetch orders |
 | `ORDER_DELETION_THRESHOLD_DAYS` | ✅        | Orders older than this are deleted        |
