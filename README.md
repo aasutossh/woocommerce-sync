@@ -47,8 +47,9 @@ pnpm install
 
 This uses a pnpm workspace to manage shared dependencies.
 
-📦 Project Setup
-⬆️ Backend Setup (/server)
+## 📦 Project Setup
+
+### ⬆️ Backend Setup (/server)
 Follow the instructions in server/README.md:
 
 ```bash
@@ -57,7 +58,7 @@ cp .env.example .env
 pnpm dev
 ```
 
-## ⬇️ Frontend Setup (/client)
+### ⬇️ Frontend Setup (/client)
 
 Follow the instructions in client/README.md:
 
