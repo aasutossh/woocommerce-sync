@@ -30,6 +30,17 @@ MongoDB database and visualize them with a responsive **React + Tailwind fronten
 
 ---
 
+## 📋 Requirements
+Before you begin, ensure you have the following installed:
+
+| Tool                           | Version   | Install Guide           |
+| ------------------------------ | --------- | ----------------------- |
+| [Node.js](https://nodejs.org/) | **v20.x** | Recommended LTS version |
+| [pnpm](https://pnpm.io/)       | **v8+**   | `npm install -g pnpm`   |
+
+
+ℹ️ This project uses pnpm workspaces, so using pnpm is required.
+
 ## 🚀 Getting Started
 
 ### 1. Clone the repo
