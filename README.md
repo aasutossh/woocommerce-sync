@@ -5,6 +5,15 @@ MongoDB database and visualize them with a responsive **React + Tailwind fronten
 
 ---
 
+## 🌍 Live Deployment
+
+This project is deployed on Render.com and is publicly accessible:
+
+| Service         | URL                                                                                           |
+| --------------- | --------------------------------------------------------------------------------------------- |
+| 🖼️ Frontend    | [https://woocommerce-sync.onrender.com](https://woocommerce-sync.onrender.com/)               |
+| 🛠️ Backend API | [https://woocommerce-sync-server.onrender.com](https://woocommerce-sync-server.onrender.com/) |
+
 ## 🧱 Project Structure
 
 ```bash
