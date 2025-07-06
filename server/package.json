@@ -1,0 +1,48 @@
+{
+  "name": "Matat task server - WooCommerce sync",
+  "version": "1.0.0",
+  "description": "WooCommerce sync server - Matat task",
+  "author": "Aasutosh Kumar Jha <aasutossh@gmail.com> (https://github.com/aasutossh)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aasutossh/woocommerce-sync.git"
+  },
+  "keywords": [],
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "node --env-file=.env dist/src/index.js",
+    "dev": "tsx watch --env-file=.env src/index.ts",
+    "build": "tsc",
+    "lint": "eslint --fix src test",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@sentry/node": "^9.35.0",
+    "axios": "^1.10.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "mongoose": "^8.16.1",
+    "morgan": "^1.10.0",
+    "node-cron": "^4.2.0",
+    "winston": "^3.17.0",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.16.2",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^24.0.10",
+    "@types/supertest": "^6.0.3",
+    "eslint": "^9.30.1",
+    "eslint-plugin-format": "^1.0.1",
+    "supertest": "^7.1.1",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}
